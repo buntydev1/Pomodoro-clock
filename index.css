@@ -1,0 +1,23 @@
+function myTimer(){
+    var time = new Date();
+     console.log('value of time:',time);
+    var h = time.getHours();
+    var m = time.getMinutes();
+    document.getElementById("time-left").innerHTML = h + ":" + m;
+    
+  }  
+  var myVar = setInterval(myTimer, 100);
+
+
+
+
+  function myTimer(){
+    var time = new Date();
+     console.log('value of time:',time);
+    document.getElementById("time-left").innerHTML = time.toLocaleString();
+    
+    
+  }  
+  var myVar = setInterval(myTimer, 1000);
+
+  bunty.innerText = parseInt(bunty.innerText) + 1;
